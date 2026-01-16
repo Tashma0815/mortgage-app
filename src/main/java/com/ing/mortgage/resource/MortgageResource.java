@@ -12,6 +12,9 @@ import lombok.extern.java.Log;
 
 import java.util.List;
 
+/**
+ * Resource class exposing mortgage related endpoints
+ */
 @Log
 @Path("/api")
 public class MortgageResource {
