@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Class containing the business logic for mortgage calculations.
  */
 @Log
 @ApplicationScoped
@@ -32,12 +32,12 @@ public class MortgageService {
     MortgageRate standardRate = new MortgageRate();
     standardRate.setMaturityPeriodInMonths(60);
     standardRate.setInterestRate(4.5);
-    standardRate.setLastUpdate(java.time.LocalDateTime.now());
+    standardRate.setLastUpdate(java.time.LocalDateTime.now().minusDays(1));
 
     MortgageRate eliteRate = new MortgageRate();
     eliteRate.setMaturityPeriodInMonths(80);
     eliteRate.setInterestRate(6);
-    eliteRate.setLastUpdate(java.time.LocalDateTime.now());
+    eliteRate.setLastUpdate(java.time.LocalDateTime.now().minusDays(2));
 
     MortgageRate basicRate = new MortgageRate();
     basicRate.setMaturityPeriodInMonths(50);
