@@ -65,4 +65,9 @@ class MortgageServiceTest {
     });
     assertTrue(exception.getMessage().contains("No rate configured"));
   }
+
+  @Test
+  public void testGetInterestRates() {
+    assertThat(mortgageService.getInterestRates()).isNotEmpty();
+  }
 }
