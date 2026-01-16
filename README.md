@@ -20,7 +20,9 @@ Below mentioned enhancements can be taken up based on the requirements and busin
 1. The in-memory database feature can also be implemented using h2 database. Map is been used currently to keep the implementation simple.
 2. Currently there are no custom headers implemented as part of the API calls, they can also be added to keep the track of the conencting system by introducing user-id/consumer-id. trace-id can be added to track each requests in end to end flow
 3. More precise exception handling can be done by introducing custom exception classes and business specific error messages and error codes. currently exception handling is by inbuilt libraries.
-4. The current implementation for calculating the monthly installment/costs is with considering the interest rate to be flat. logic can be modified conidering the reducing interest rate as well based on the business need.
+4. Precise api response rendering by adding valid HTTP status codes based on success and failure sceanrios.
+5. The current implementation for calculating the monthly installment/costs is with considering the interest rate to be flat. logic can be modified conidering the reducing interest rate as well based on the business need.
+
 
 
 
